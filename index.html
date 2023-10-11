@@ -1,0 +1,1866 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tatlısözlük</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header itemscope="" itemtype="http://schema.org/WPHeader" class="snipcss-l4lok">
+        <div id="top-bar" class="loggedoff">
+          <div id="logo">
+            <a tabindex="-1" href="/">
+              Tatlı sözlük
+            </a>
+          </div>
+          <form action="/" method="get" id="search-form" class="inline" role="search">
+            <input type="text" placeholder="başlık, #entry, @yazar" id="search-textbox" accesskey="b" name="q" maxlength="145" autocapitalize="off" autocorrect="off" class="ui-autocomplete-input" autocomplete="off">
+            <span class="spin">
+              ↻
+            </span>
+            <button type="submit" aria-label="getir">
+              <svg class="eksico">
+                <use xlink:href="#eksico-search">
+                </use>
+              </svg>
+            </button>
+            <a id="a3-toggle" href="#" accesskey="a">
+              &nbsp;
+            </a>
+          </form>
+          <div id="auto-complete-result" style="display: none">
+          </div>
+          <form action="/basliklar/ara" class="vertical" id="advanced-search-form" method="get" role="search" novalidate="novalidate">
+            <div>
+              <label for="SearchForm_Keywords">
+                kelimeler
+              </label>
+              <input id="SearchForm_Keywords" name="SearchForm.Keywords" type="text" value="" autocapitalize="off" autocorrect="off">
+              <span class="field-validation-valid" data-valmsg-for="SearchForm.Keywords" data-valmsg-replace="true">
+              </span>
+            </div>
+            <div>
+              <label for="SearchForm_Author">
+                yazar
+              </label>
+              <input autocomplete="off" class="nickpicker ui-autocomplete-input" id="SearchForm_Author" maxlength="40" name="SearchForm.Author" placeholder="" type="text" value="" autocapitalize="off" autocorrect="off">
+            </div>
+            <div>
+              <label for="SearchForm_When_From">
+                ne zaman
+              </label>
+              <span class="daterange">
+                <input data-val="true" data-val-date="The field From must be a date." id="SearchForm_When_From" name="SearchForm.When.From" type="date" value="">
+                <input data-val="true" data-val-date="The field To must be a date." id="SearchForm_When_To" name="SearchForm.When.To" type="date" value="">
+                <span class="field-validation-valid" data-valmsg-for="SearchForm.When.From" data-valmsg-replace="true">
+                </span>
+                <span class="field-validation-valid" data-valmsg-for="SearchForm.When.To" data-valmsg-replace="true">
+                </span>
+              </span>
+            </div>
+            <div>
+              <div class="checkbox">
+                <input data-val="true" data-val-required="The güzelinden olsun field is required." id="SearchForm_NiceOnly" name="SearchForm.NiceOnly" type="checkbox" value="true">
+                <input name="SearchForm.NiceOnly" type="hidden" value="false">
+                <label for="SearchForm_NiceOnly">
+                  güzelinden olsun
+                </label>
+              </div>
+              <span class="field-validation-valid" data-valmsg-for="SearchForm.NiceOnly" data-valmsg-replace="true">
+              </span>
+            </div>
+            <div>
+              <label for="SearchForm_SortOrder">
+                sıralama şekli
+              </label>
+              <select data-val="true" data-val-required="The sıralama şekli field is required." id="SearchForm_SortOrder" name="SearchForm.SortOrder">
+                <option value="Topic">
+                  alfabetik
+                </option>
+                <option selected="selected" value="Date">
+                  yeniden eskiye
+                </option>
+                <option value="Count">
+                  dolu dolu
+                </option>
+              </select>
+            </div>
+            <div class="actions">
+              <button type="submit" class="primary">
+                mükemmel ara
+              </button>
+              <a class="close">
+                boşver
+              </a>
+            </div>
+            <ul id="ui-id-1" tabindex="0" class="ui-menu ui-widget ui-widget-content ui-autocomplete ui-front style-PtVAo">
+            </ul>
+          </form>
+          <nav id="top-navigation" class="" itemscope="" itemtype="http://schema.org/SiteNavigationElement">
+            <ul>
+              <li class="mobile-only">
+                <a href="/basliklar/m/populer" title="dünyamızda neler olup bitiyor">
+                  gündem
+                </a>
+              </li>
+              <li class="mobile-only">
+                <a href="/m/debe" title="dünün en beğenilen entry'leri">
+                  debe
+                </a>
+              </li>
+              <li class="mobile-only">
+                <a href="/kanallar/m">
+                  kanallar
+                </a>
+              </li>
+              <li>
+                <a id="top-login-link" href="/giris">
+                  giriş
+                </a>
+              </li>
+              <li>
+                <a id="top-registration-link" href="/kayit">
+                  kayıt ol
+                </a>
+              </li>
+            
+            </ul>
+          </nav>
+          <div id="style-5XrhH" class="style-5XrhH">
+          </div>
+          <nav id="sub-navigation">
+            <ul id="quick-index-nav">
+              <li>
+                <a href="/basliklar/gundem" title="dünyamızda neler olup bitiyor">
+                  gündem
+                </a>
+              </li>
+              <li>
+                <a href="/debe" title="dünün en beğenilen entry'leri">
+                  debe
+                </a>
+              </li>
+              <li>
+                <a href="/basliklar/sorunsal" title="dünyamızda neler olup bitiyor">
+                  sorunsallar
+                </a>
+              </li>
+              <li>
+                <a class="index-link" href="/basliklar/kanal/spor" title="futbol, basketbol, tenis ve curling gibi ata sporları">
+                  #spor
+                </a>
+              </li>
+              <li>
+                <a class="index-link" href="/basliklar/kanal/iliskiler" title="sevgili, eski sevgili ve hoşlanılan kız">
+                  #ilişkiler
+                </a>
+              </li>
+              <li>
+                <a class="index-link" href="/basliklar/kanal/siyaset" title="partiler, politikacılar, terör, savaş kan ve korku">
+                  #siyaset
+                </a>
+              </li>
+              <li class="dropdown">
+                <a class="dropdown-toggle toggles" title="kanallar">
+                  <svg class="eksico">
+                    <use xlink:href="#eksico-dots">
+                    </use>
+                  </svg>
+                </a>
+                <ul class="dropdown-menu toggles-menu">
+                  <li>
+                    <a href="/basliklar/tarihte-bugun" title="tarihte bugün">
+                      tarihte bugün
+                    </a>
+                  </li>
+                  <li>
+                    <a class="index-link" href="/basliklar/kanal/seyahat" title="gezilecek, görülecek yerlerle ilgili her şey">
+                      #seyahat
+                    </a>
+                  </li>
+                  <li>
+                    <a class="index-link" href="/basliklar/kanal/muzik" title="gruplar, parçalar, müzik teorileri, enstrümanlar, pena">
+                      #müzik
+                    </a>
+                  </li>
+                  <li>
+                    <a class="index-link" href="/basliklar/kanal/tv" title="tv kanalları, diziler, yarışmalar">
+                      #tv
+                    </a>
+                  </li>
+                  <li>
+                    <a class="index-link" href="/basliklar/kanal/haber" title="yurtta ve dünyada olan biten">
+                      #haber
+                    </a>
+                  </li>
+                  <li>
+                    <a class="index-link" href="/basliklar/kanal/bilim" title="atom mühendisliğine giden yolda her konu">
+                      #bilim
+                    </a>
+                  </li>
+                  <li>
+                    <a class="index-link" href="/basliklar/kanal/edebiyat" title="kitaplar, yazarlar, ekoller, yayıncılar, ödüller ve niceleri">
+                      #edebiyat
+                    </a>
+                  </li>
+                  <li>
+                    <a class="index-link" href="/basliklar/kanal/egitim" title="akademi, müfredat, hocalar ve dersler">
+                      #eğitim
+                    </a>
+                  </li>
+                  <li>
+                    <a class="index-link" href="/basliklar/kanal/ekonomi" title="finans, yatırım araçları, krizler, bankalar, parasal göstergeler">
+                      #ekonomi
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/basliklar/basiboslar" title="henüz bir kanala ait olmayan başlıklar">
+                      başıboşlar
+                    </a>
+                  </li>
+                  <li>
+                    <a class="not-index" href="/kanallar">
+                      tüm kanallar
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            
+          </nav>
+        </div>
+      </header>
+      
+
+    <div id="container" class="snipcss-PcEKY">
+        <div id="index-section" class="robots-nocontent main-left-frame">
+          <nav id="partial-index" itemscope="" itemtype="http://schema.org/SiteNavigationElement">
+            <div id="left-index" class="clearfix dropdown  " data-caption="gündem">
+              <h2 title="175 başlık">
+                gündem
+                <a class="channel-filter-toggle" accesskey="a">
+                  <svg class="eksico">
+                    <use xlink:href="#eksico-gear">
+                    </use>
+                  </svg>
+                </a>
+              </h2>
+            </div>
+            <div id="index-filter-prefs" style="display:none">
+              <span id="channel-filter-description">
+                gündeminizi kişiselleştirin:
+              </span>
+              <ul class="index-channel-filter">
+                <li>
+                  <span id="filter-index-channel" class="active" data-enabled="1" data-filter-id="1" data-set-cookie-action="/basliklar/set-channel-filter" data-mobile-action="/basliklar/m/populer" data-web-action="/basliklar/gundem">
+                    #spor
+                  </span>
+                </li>
+                <li>
+                  <span id="filter-index-channel" class="active" data-enabled="1" data-filter-id="2" data-set-cookie-action="/basliklar/set-channel-filter" data-mobile-action="/basliklar/m/populer" data-web-action="/basliklar/gundem">
+                    #siyaset
+                  </span>
+                </li>
+                <li>
+                  <span id="filter-index-channel" class="active" data-enabled="1" data-filter-id="4" data-set-cookie-action="/basliklar/set-channel-filter" data-mobile-action="/basliklar/m/populer" data-web-action="/basliklar/gundem">
+                    #anket
+                  </span>
+                </li>
+                <li>
+                  <span id="filter-index-channel" class="active" data-enabled="1" data-filter-id="5" data-set-cookie-action="/basliklar/set-channel-filter" data-mobile-action="/basliklar/m/populer" data-web-action="/basliklar/gundem">
+                    #ilişkiler
+                  </span>
+                </li>
+                <li>
+                  <span id="filter-index-channel" class="passive" data-enabled="0" data-filter-id="10" data-set-cookie-action="/basliklar/set-channel-filter" data-mobile-action="/basliklar/m/populer" data-web-action="/basliklar/gundem">
+                    #tatlı sözlük
+                  </span>
+                </li>
+                <li>
+                  <span id="filter-index-channel" class="passive" data-enabled="0" data-filter-id="11" data-set-cookie-action="/basliklar/set-channel-filter" data-mobile-action="/basliklar/m/populer" data-web-action="/basliklar/gundem">
+                    #yetişkin
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <ul class="topic-list partial" data-timestamp="638324636992470572">
+              <li>
+                <a draggable="true">
+                  9 ekim 2023 israil'in topyekün savaşı 
+                  <small>
+                    146
+                  </small>
+                </a>
+              </li>
+        
+             
+             
+              <li id="sponsored-index-item-second" style="">
+                <div class="ad-double-click ad-1x1 ad-banner ad-doubleclickwebsponsoredindexitemsecond ads" data-info="{&quot;NetworkIdentifier&quot;:&quot;/1024435/desktop_web_sponsored_title_2&quot;,&quot;Slot&quot;:&quot;div-gpt-ad-1458674186341-0&quot;,&quot;NetworkCode&quot;:&quot;1024435&quot;,&quot;Target&quot;:&quot;desktop_web_sponsored_title_2&quot;,&quot;IsLazyLoad&quot;:false,&quot;Size&quot;:[1,1],&quot;Name&quot;:&quot;DoubleClickWebSponsoredIndexItemSecond&quot;,&quot;DisplayTypes&quot;:4}">
+                  <div id="div-gpt-ad-1458674186341-0" data-google-query-id="CMifqMmB6YEDFdSMgwcdMgEE3g" class="style-WoP7y">
+                    <div id="google_ads_iframe_/1024435/desktop_web_sponsored_title_2_0__container__" class="style-k5zT7">
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li id="nativespot-unit-10924">
+              </li>
+
+            
+            
+              <li id="sponsored-index-item-third" style="">
+                <div class="ad-double-click ad-1x1 ad-banner ad-doubleclickwebsponsoredindexitemthird ads" data-info="{&quot;NetworkIdentifier&quot;:&quot;/1024435/desktop_web_sponsored_title_3&quot;,&quot;Slot&quot;:&quot;div-gpt-ad-1458674294703-0&quot;,&quot;NetworkCode&quot;:&quot;1024435&quot;,&quot;Target&quot;:&quot;desktop_web_sponsored_title_3&quot;,&quot;IsLazyLoad&quot;:false,&quot;Size&quot;:[1,1],&quot;Name&quot;:&quot;DoubleClickWebSponsoredIndexItemThird&quot;,&quot;DisplayTypes&quot;:4}">
+                  <div id="div-gpt-ad-1458674294703-0" data-google-query-id="CK26qMmB6YEDFWSZgwcdzGMEuw" class="style-7gvHf">
+                    <div id="google_ads_iframe_/1024435/desktop_web_sponsored_title_3_0__container__" class="style-OSQMD">
+                    </div>
+                  </div>
+                </div>
+              </li>
+              
+    
+              <li>
+                <a href="/trafikte-goruldugunde-mutlu-eden-davranislar--7724631?a=popular" draggable="true">
+                  trafikte görüldüğünde mutlu eden davranışlar 
+                  <small>
+                    55
+                  </small>
+                </a>
+              </li>
+              <li>
+                <a href="/turk-solunun-en-iyi-yaptigi-sey--5210471?a=popular" draggable="true">
+                  türk solunun en iyi yaptığı şey 
+                  <small>
+                    115
+                  </small>
+                </a>
+              </li>
+           
+              <li>
+                <a href="/breaking-badden-cikarilacak-ders--5089054?a=popular" draggable="true">
+                  breaking bad'den çıkarılacak ders 
+                  <small>
+                    64
+                  </small>
+                </a>
+              </li>
+              <li>
+                <a href="/kel-olmasina-ragmen-sevgili-bulabilen-erkek--5767305?a=popular" draggable="true">
+                  kel olmasına rağmen sevgili bulabilen erkek 
+                  <small>
+                    109
+                  </small>
+                </a>
+              </li>
+              <li>
+                <a href="/jokeri-canlandiracak-turk-oyuncu--6543252?a=popular" draggable="true">
+                  jokeri canlandıracak türk oyuncu 
+                  <small>
+                    20
+                  </small>
+                </a>
+              </li>
+              <li id="sponsored-index-item-fifth" style="">
+                <div class="ad-double-click ad-1x1 ad-banner ad-doubleclickwebsponsoredindexitemfifth ads" data-info="{&quot;NetworkIdentifier&quot;:&quot;/1024435/desktop_web_sponsored_title_5&quot;,&quot;Slot&quot;:&quot;div-gpt-ad-1458674294704-0&quot;,&quot;NetworkCode&quot;:&quot;1024435&quot;,&quot;Target&quot;:&quot;desktop_web_sponsored_title_5&quot;,&quot;IsLazyLoad&quot;:false,&quot;Size&quot;:[1,1],&quot;Name&quot;:&quot;DoubleClickWebSponsoredIndexItemFifth&quot;,&quot;DisplayTypes&quot;:4}">
+                  <div id="div-gpt-ad-1458674294704-0" data-google-query-id="CNOEqcmB6YEDFZKQgwcdvbIIhA" class="style-siFps">
+                    <div id="google_ads_iframe_/1024435/desktop_web_sponsored_title_5_0__container__" class="style-qeood">
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a href="/8-ekim-2023-fenerbahcenin-kazandigi-penalti--7724080?a=popular" draggable="true">
+                  8 ekim 2023 fenerbahçe'nin kazandığı penaltı 
+                  <small>
+                    595
+                  </small>
+                </a>
+              </li>
+              <li>
+                <a href="/sacha-boey--6983473?a=popular" draggable="true">
+                  sacha boey 
+                  <small>
+                    14
+                  </small>
+                </a>
+              </li>
+            
+              <li id="sponsored-index-item-fourth" style="">
+                <div class="ad-double-click ad-1x1 ad-banner ad-doubleclickwebsponsoredindexitemfourth ads" data-info="{&quot;NetworkIdentifier&quot;:&quot;/1024435/desktop_web_sponsored_title_4&quot;,&quot;Slot&quot;:&quot;div-gpt-ad-1458674186344-0&quot;,&quot;NetworkCode&quot;:&quot;1024435&quot;,&quot;Target&quot;:&quot;desktop_web_sponsored_title_4&quot;,&quot;IsLazyLoad&quot;:false,&quot;Size&quot;:[1,1],&quot;Name&quot;:&quot;DoubleClickWebSponsoredIndexItemFourth&quot;,&quot;DisplayTypes&quot;:4}">
+                  <div id="div-gpt-ad-1458674186344-0" data-google-query-id="CJa9qcmB6YEDFdGJdwodTq4CRA" class="style-DCsgT">
+                    <div id="google_ads_iframe_/1024435/desktop_web_sponsored_title_4_0__container__" class="style-QkL5Z">
+                    </div>
+                  </div>
+                </div>
+              </li>
+             
+              <li>
+                <a href="/ikinci-el-otomobil-piyasasi--2309757?a=popular" draggable="true">
+                  ikinci el otomobil piyasası 
+                  <small>
+                    75
+                  </small>
+                </a>
+              </li>
+              <li>
+                <a href="/kenan-sofuoglu--887994?a=popular" draggable="true">
+                  kenan sofuoğlu 
+                  <small>
+                    34
+                  </small>
+                </a>
+              </li>
+             
+              <li>
+                <a href="/yasliligin-en-urkuten-yani--7430706?a=popular" draggable="true">
+                  yaşlılığın en ürküten yanı 
+                  <small>
+                    116
+                  </small>
+                </a>
+              </li>
+            
+              <li>
+                <a href="/turkiye-ve-italyanin-euro-2032-ortak-adayligi--7690004?a=popular" draggable="true">
+                  türkiye ve italya'nın euro 2032 ortak adaylığı 
+                  <small>
+                    87
+                  </small>
+                </a>
+              </li>
+              <li>
+                <a href="/gece-02-30a-mr-randevusu-vermek--7724512?a=popular" draggable="true">
+                  gece 02.30'a mr randevusu vermek 
+                  <small>
+                    63
+                  </small>
+                </a>
+              </li>
+             
+              <li>
+                <a href="/ileride-evlenecegin-kisiye-bir-cumle-birak--6227822?a=popular" draggable="true">
+                  ileride evleneceğin kişiye bir cümle bırak 
+                  <small>
+                    43
+                  </small>
+                </a>
+              </li>
+            
+              <li>
+                <a href="/cevremizde-cekilisten-hediye-kazanan-olmamasi--7724577?a=popular" draggable="true">
+                  çevremizde çekilişten hediye kazanan olmaması 
+                  <small>
+                    59
+                  </small>
+                </a>
+              </li>
+              <li>
+                <a href="/tahta-kasigi-bulasik-makinesinde-yikamak--7724397?a=popular" draggable="true">
+                  tahta kaşığı bulaşık makinesinde yıkamak 
+                  <small>
+                    71
+                  </small>
+                </a>
+              </li>
+              <li>
+                <a href="/miras-bolusumu-sorunu-yasamayan-aile--5806657?a=popular" draggable="true">
+                  miras bölüşümü sorunu yaşamayan aile 
+                  <small>
+                    14
+                  </small>
+                </a>
+              </li>
+              <li>
+                <a href="/bir-ulkeyi-kaliteli-yapan-detaylar--7719426?a=popular" draggable="true">
+                  bir ülkeyi kaliteli yapan detaylar 
+                  <small>
+                    16
+                  </small>
+                </a>
+              </li>
+              <li>
+                <a href="/kotu-hissedildiginde-rahatlamak-icin-yapilan-sey--5560321?a=popular" draggable="true">
+                  kötü hissedildiğinde rahatlamak için yapılan şey 
+                  <small>
+                    101
+                  </small>
+                </a>
+              </li>
+            
+              <li>
+                <a href="/kedicik-140journos-belgeseli--7720622?a=popular" draggable="true">
+                  kedicik (140journos belgeseli) 
+                  <small>
+                    46
+                  </small>
+                </a>
+              </li>
+             
+              <li>
+                <a href="/asansorde-gulumseyerek-selam-vermek--4891439?a=popular" draggable="true">
+                  asansörde gülümseyerek selam vermek 
+                  <small>
+                    17
+                  </small>
+                </a>
+              </li>
+             
+              <li>
+                <a href="/8-ekim-2023-kasimpasa-fenerbahce-maci--7721642?a=popular" draggable="true">
+                  8 ekim 2023 kasımpaşa fenerbahçe maçı 
+                  <small>
+                    1,1b
+                  </small>
+                </a>
+              </li>
+             
+              <li>
+                <a href="/gune-psikolojik-bir-tespit-birak--6245662?a=popular" draggable="true">
+                  güne psikolojik bir tespit bırak 
+                  <small>
+                    30
+                  </small>
+                </a>
+              </li>
+              <li>
+                <a href="/hamas--151818?a=popular" draggable="true">
+                  hamas 
+                  <small>
+                    33
+                  </small>
+                </a>
+              </li>
+              <li>
+                <a href="/gent-vs-brugge--7724626?a=popular" draggable="true">
+                  gent vs brugge 
+                  <small>
+                    107
+                  </small>
+                </a>
+              </li>
+              <li>
+                <a href="/masterchef-turkiye-2023-all-star--7401318?a=popular" draggable="true">
+                  masterchef türkiye 2023 all-star 
+                  <small>
+                    207
+                  </small>
+                </a>
+              </li>
+              <li>
+                <a href="/cemal-canpolat--4998123?a=popular" draggable="true">
+                  cemal canpolat 
+                  <small>
+                    36
+                  </small>
+                </a>
+              </li>
+            
+            </ul>
+            <div class="quick-index-continue-link-container">
+              <a class="index-link" href="/basliklar/gundem?p=2&amp;id=901982&amp;slug=swallow-the-sun" id="quick-index-continue-link">
+                daha da ...
+              </a>
+            </div>
+          </nav>
+        </div>
+        <div id="main">
+          <div class="under-top-ad">
+            <div class="ad-double-click ad-728x90 ad-banner ad-doubleclickwebmastheadfortr ads style-sf1v6" data-info="{&quot;NetworkIdentifier&quot;:&quot;/1024435/desktop_web_masthead&quot;,&quot;Slot&quot;:&quot;div-gpt-ad-1507285907658-0&quot;,&quot;NetworkCode&quot;:&quot;1024435&quot;,&quot;Target&quot;:&quot;desktop_web_masthead&quot;,&quot;IsLazyLoad&quot;:false,&quot;Size&quot;:[728,90],&quot;Name&quot;:&quot;DoubleClickWebMastheadForTR&quot;,&quot;DisplayTypes&quot;:4}" id="style-sf1v6">
+              <div id="div-gpt-ad-1507285907658-0" style="" data-google-query-id="CPvPqcmB6YEDFRWpdwodJJcBKA">
+                <div id="google_ads_iframe_/1024435/desktop_web_masthead_0__container__" class="style-IBtXd">
+                  <iframe id="google_ads_iframe_/1024435/desktop_web_masthead_0" name="google_ads_iframe_/1024435/desktop_web_masthead_0" title="3rd party ad content" width="970" height="250" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" role="region" aria-label="Advertisement" tabindex="0" allow="attribution-reporting" data-load-complete="true" data-google-container-id="6" class="style-ix57h">
+                  </iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="_adr_abp_container_1" data-section="5d5d2747da2acef5712b8ce8f70ae2fa" data-packetid="00000001-f46e4606-6f2d-4e23-9daa-49f6d203dceb" class="_adr_abp_container style-XBXDj">
+            
+           
+          </div>
+          <div id="content" class="instapaper_body" role="main">
+            <section id="content-body">
+              <div id="topic">
+                <h1 id="title" data-title="66 50'n 28 40'e" data-id="6438366" data-slug="66-50n-28-40e" data-vote-url="/entry/vote" data-unvote-url="/entry/removevote" data-comment-vote-url="/yorum/vote" data-comment-unvote-url="/yorum/removevote" data-add-relation-url="" data-preserved="">
+                  <a href="/66-50n-28-40e--6438366" itemprop="url">
+                    <span itemprop="name">
+                      66 50'n 28 40'e
+                    </span>
+                  </a>
+                </h1>
+                <div class="clearfix sub-title-container">
+                  <div class="sub-title-menu">
+                    <div id="in-topic-nice-menu">
+                      <a id="in-topic-nice-toggle" class="expandable toggles" data-caption=" şükela ">
+                        şükela
+                        <span class="nice-on">
+                        </span>
+                      </a>
+                      <ul id="in-topic-nice-options" class="toggles-menu">
+                        <li>
+                          <a href="/66-50n-28-40e--6438366?a=dailynice" class="">
+                            son 24 saat
+                          </a>
+                        </li>
+                        <li>
+                          <a class="open-subscription-popup">
+                            son 1 hafta
+                          </a>
+                        </li>
+                        <li>
+                          <a class="open-subscription-popup">
+                            son 1 ay
+                          </a>
+                        </li>
+                        <li>
+                          <a class="open-subscription-popup">
+                            son 3 ay
+                          </a>
+                        </li>
+                        <li>
+                          <a href="/66-50n-28-40e--6438366?a=nice" class="">
+                            tümü
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div id="subscription-popup" class="modal">
+                      <p>
+                        bu özelliği kullanmak için reklamsız üyeliğe sahip olmanız gerekmektedir. mobil uygulamamızı indirerek reklamsız aboneliğinizi başlatabilirsiniz.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="ad-double-click ad-1x1 ad-banner ad-doubleclickwebaffiliate645x35top ads" data-info="{&quot;NetworkIdentifier&quot;:&quot;/1024435/desktop_web_affiliate_top&quot;,&quot;Slot&quot;:&quot;div-gpt-ad-1501667981457-0&quot;,&quot;NetworkCode&quot;:&quot;1024435&quot;,&quot;Target&quot;:&quot;desktop_web_affiliate_top&quot;,&quot;IsLazyLoad&quot;:false,&quot;Size&quot;:[1,1],&quot;Name&quot;:&quot;DoubleClickWebAffiliate645x35Top&quot;,&quot;DisplayTypes&quot;:4}">
+                  <div id="div-gpt-ad-1501667981457-0" data-google-query-id="CLWFqsmB6YEDFeyRgwcdprkJxA" class="style-EJpL9">
+                    <div id="google_ads_iframe_/1024435/desktop_web_affiliate_top_0__container__" class="style-mPbJq">
+                    </div>
+                  </div>
+                </div>
+                <ul id="entry-item-list">
+                  <div class="ad-double-click ad-1x1 ad-banner ad-doubleclickwebsponsoredentry ads" data-info="{&quot;NetworkIdentifier&quot;:&quot;/138586269/desktop_web_sponsored_entry&quot;,&quot;Slot&quot;:&quot;div-gpt-ad-1459426546815-0&quot;,&quot;NetworkCode&quot;:&quot;138586269&quot;,&quot;Target&quot;:&quot;desktop_web_sponsored_entry&quot;,&quot;IsLazyLoad&quot;:false,&quot;Size&quot;:[1,1],&quot;Name&quot;:&quot;DoubleClickWebSponsoredEntry&quot;,&quot;DisplayTypes&quot;:4}" id="web-sponsored-entry" style="">
+                    <div id="div-gpt-ad-1459426546815-0" data-google-query-id="CMGBqsmB6YEDFYiCgwcdbT8GBQ" class="style-2VEiO">
+                      <div id="google_ads_iframe_/138586269/desktop_web_sponsored_entry_0__container__" class="style-NCtPo">
+                      </div>
+                    </div>
+                  </div>
+                  <li data-id="104227728" data-author="bruhların lordu" data-author-id="2601027" data-flags="share report vote" data-isfavorite="false" data-ispinned="false" data-ispinnedonprofile="false" data-favorite-count="0" data-seyler-slug="" data-comment-count="0" id="entry-item" data-show="true">
+                    <div class="content">
+                      enfes bir 
+                      <a class="b">
+                        swallow the sun
+                      </a>
+                      enstrümantal parçası. şarkı ismi koordinat ve finlandiya'nın salla şehrindeki bir dönel kavşağı işaret ediyor. grup üyelerinden raivio için kişisel bir öneme sahipmiş. nedir bilinmez.
+                      <br>
+                    </div>
+                    <footer>
+                      <div class="feedback-container">
+                        <div class="feedback">
+                          <div class="entry-share dropdown">
+                            <a class="entry-share dropdown-toggle toggles" title="share">
+                              <svg class="eksico" id="svg-share">
+                                <use xlink:href="#eksico-share">
+                                </use>
+                              </svg>
+                            </a>
+                            <ul class="dropdown-menu right toggles-menu">
+                              <li class="share-links">
+                                <a target="_blank" rel="nofollow noopener" href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Feksisozluk1923.com%2Fentry%2F104227728&amp;p[title]=66%2050'n%2028%2040'e&amp;p[summary]=%0A%20%20%20%20enfes%20bir%20swallow%20the%20sun%20enstr%C3%BCmantal%20par%C3%A7as%C4%B1.%20%C5%9Fark%C4%B1%20ismi%20koordinat%20ve%20finlandiya'n%C4%B1n%20salla%20%C5%9Fehrindeki%20bir%20d%C3%B6nel%20kav%C5%9Fa%C4%9F%C4%B1%20i%C5%9Faret%20ediyor.%20grup%20%C3%BCyelerinden%20raivio%20i%C3%A7in%20ki%C5%9Fisel%20bir%20%C3%B6neme%20sahipmi%C5%9F.%20nedir%20bilinmez.l%C3%A9%20kaynak%0A%20%20&amp;p[images][0]=https://eksisozluk1923.com/content/img/ilogo_fbv2.png&amp;v=1" aria-label="facebook" title="facebook" class="svgico svgico-facebook">
+                                  <svg class="eksico" id="svg-icon-facebook">
+                                    <use xlink:href="#eksico-icon-facebook">
+                                    </use>
+                                  </svg>
+                                  facebook
+                                </a>
+                              </li>
+                              <li class="share-links">
+                                <a target="_blank" rel="nofollow noopener" href="/entry/tweet/104227728" aria-label="twitter" title="twitter" class="svgico svgico-twitter">
+                                  <svg class="eksico" id="svg-icon-twitter">
+                                    <use xlink:href="#eksico-icon-twitter">
+                                    </use>
+                                  </svg>
+                                  twitter
+                                </a>
+                              </li>
+                              <li class="share-links">
+                                <a id="copy-to-clipboard-entry-link" class="svgico svgico-copy-link">
+                                  <svg class="eksico" id="svg-copy-link">
+                                    <use xlink:href="#eksico-copy-link">
+                                    </use>
+                                  </svg>
+                                  entry link'ini kopyala
+                                </a>
+                              </li>
+                              <li class="share-links">
+                                <a id="copy-to-clipboard-entry-number" class="svgico svgico-hashtag">
+                                  <svg class="eksico" id="svg-hashtag">
+                                    <use xlink:href="#eksico-hashtag">
+                                    </use>
+                                  </svg>
+                                  entry no kopyala
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="other dropdown">
+                            <a class="others dropdown-toggle toggles" title="diğer">
+                              <svg class="eksico" id="svg-dots">
+                                <use xlink:href="#eksico-dots">
+                                </use>
+                              </svg>
+                            </a>
+                            <ul class="dropdown-menu right toggles-menu">
+                              <li>
+                                <a class="report-link" title="aynen öyle" href="/iletisim?RefEntryId=104227728&amp;Category=Content&amp;Subject='66%2050'n%2028%2040'e'%20ba%C5%9Fl%C4%B1%C4%9F%C4%B1ndaki%20%23104227728%20no'lu%20entry">
+                                  şikayet
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <span class="rate-options">
+                          <a class="like" title="şükela!">
+                            <span>
+                            </span>
+                            <svg class="eksico" id="svg-chevron-up">
+                              <use xlink:href="#eksico-chevron-up">
+                              </use>
+                            </svg>
+                          </a>
+                          <a class="dislike" title="çok kötü">
+                            <span>
+                            </span>
+                            <svg class="eksico" id="svg-chevron-down">
+                              <use xlink:href="#eksico-chevron-down">
+                              </use>
+                            </svg>
+                          </a>
+                        </span>
+                      </div>
+                      <div class="info">
+                        <div class="entry-footer-bottom">
+                          <div class="footer-info">
+                            <div id="entry-nick-container">
+                              <div id="entry-author">
+                                <a class="entry-author" href="">
+                                    bruhların lordu
+                                </a>
+                              </div>
+                            </div>
+                            <div>
+                              <a class="entry-date permalink" href="">
+                                27.03.2020 03:43
+                              </a>
+                            </div>
+                          </div>
+                          <div class="avatar-container">
+                            <a href="/biri/harfnarfjordur">
+                              <img class="avatar" src="https://ekstat.com/img/default-profile-picture-light.svg" data-default="//ekstat.com/img/default-profile-picture-light.svg" alt="harfnarfjordur" title="harfnarfjordur">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </footer>
+                    <div class="comment-summary">
+                      <div class="comment-pages">
+                      </div>
+                    </div>
+                  </li>
+                  <li data-id="119914723" data-author="not a bruh like you" data-author-id="1319550" data-flags="share report vote" data-isfavorite="false" data-ispinned="false" data-ispinnedonprofile="false" data-favorite-count="8" data-seyler-slug="" data-comment-count="0" id="entry-item" data-show="true">
+                    <div class="content">
+                      çok underrated ve çok başarılı bir finli grup olan (bkz: 
+                      <a class="b" >
+                        swallow the sun
+                      </a>
+                      ) şarkısı. 
+                      <br>
+                      muhteşem şarkı. öyle böyle değil. kendimi başından sonuna bırakıp bedenimden o kadar uzaklaşıyorum ki kendime gelmek geri dönmek uzun sürüyor bitince. 
+                      <br>
+                      giriş kısmını bir elektro bağlama ile dinlemeyi dehşet isterdim. o kadar yakışır gibi geliyor ki. 
+                      <br>
+                      2.30 gibi giren melodi birkaç nota eksik ile (bkz: 
+                      <a class="b" >
+                        röyksopp
+                      </a>
+                      ) (bkz: 
+                      <a class="b" >
+                        rising urge
+                      </a>
+                      ). birebir aynı. 1.20de buraya denk geliyor. 
+                      <a rel="nofollow noopener" class="url" target="_blank" >
+                        rising urge
+                      </a>
+                      <br>
+                      sonrasında ise apayrı bir katman geliyor. hafif bir (bkz: 
+                      <a class="b" >
+                        dark tranquillity
+                      </a>
+                      ) esintisi.. 
+                      <br>
+                      şarkıdaki konum ise finlandiya (bkz: 
+                      <a class="b" >
+                        salla
+                      </a>
+                      )'dan bir sokak görüntüsü. görmek isterseniz 
+                      <a rel="nofollow noopener" class="url" target="_blank" >
+                        tık
+                      </a>
+                      gruba mesaj attım burası neresidir bu şarkı neden böyle muhteşemdir diye. dönüş alırsam editlerim. 
+                      <br>
+                      müzik ne kadar muhteşem bir şey. insanı perişan ederken hayata böylesine nasıl bağlıyor... 
+                      <br>
+                      <a rel="nofollow noopener" class="url" target="_blank" href="https://open.spotify.com/track/4TJvON3l2YCajvz2qRJqq2?si=oAhcoazBToyUlbITUAWVwg" title="https://open.spotify.com/track/4TJvON3l2YCajvz2qRJqq2?si=oAhcoazBToyUlbITUAWVwg">
+                        66 50'n 29 40'e
+                      </a>
+                      müzik ne kadar muhteşem bir şey. insanı perişan ederken hayata böylesine nasıl bağlıyor... 
+                      <br>
+                      <a rel="nofollow noopener" class="url" target="_blank" href="https://open.spotify.com/track/4TJvON3l2YCajvz2qRJqq2?si=oAhcoazBToyUlbITUAWVwg" title="https://open.spotify.com/track/4TJvON3l2YCajvz2qRJqq2?si=oAhcoazBToyUlbITUAWVwg">
+                        66 50'n 29 40'e
+                      </a>
+                      <br>
+                      edit: sözlüğün en harika film yazarlarından, benim de çok sevdiğim arkadaşım @istanbul beyefendisi'nden gelen röportaj metnini bırakıyorum buraya: 
+                      <br>
+                      “ı always see music as pictures, like short movies, and if ı don’t see it like that, ı don’t believe it and ı stop writing that song. but that song was really amazing. when ı wrote it, all these images of lapland that ı experienced when ı was a kid poured into my mind and so ı knew that ı had to dedicate it to this place. when ı wrote the song, ı saw everything though the eyes of a bird, like a hawk, and ı could so clearly see everything – the landscapes and the rust of the autumn on a clear day, and the sun shining off the lakes.”
+                    </div>
+                    <span class="read-more-link-wrapper">
+                      <a>
+                        <svg class="eksico" id="svg-dots-readmore">
+                          <use xlink:href="#eksico-dots">
+                          </use>
+                        </svg>
+                        devamını okuyayım
+                      </a>
+                    </span>
+                    <footer>
+                      <div class="feedback-container">
+                        <div class="feedback">
+                          <div class="entry-share dropdown">
+                            <a class="entry-share dropdown-toggle toggles" title="share">
+                              <svg class="eksico" id="svg-share">
+                                <use xlink:href="#eksico-share">
+                                </use>
+                              </svg>
+                            </a>
+                            <ul class="dropdown-menu right toggles-menu">
+                              <li class="share-links">
+                                <a target="_blank" rel="nofollow noopener" href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Feksisozluk1923.com%2Fentry%2F119914723&amp;p[title]=66%2050'n%2028%2040'e&amp;p[summary]=%C3%A7ok%20underrated%20ve%20%C3%A7ok%20ba%C5%9Far%C4%B1l%C4%B1%20bir%20finli%20grup%20olan%20(bkz%3A%20swallow%20the%20sun)%20%C5%9Fark%C4%B1s%C4%B1.%20muhte%C5%9Fem%20%C5%9Fark%C4%B1.%20%C3%B6yle%20b%C3%B6yle%20de%C4%9Fil.%20kendimi%20ba%C5%9F%C4%B1ndan%20sonuna%20b%C4%B1rak%C4%B1p%20bedenimden%20o%20kadar%20uzakla%C5%9F%C4%B1yorum%20ki%20kendime%20gelmek%20geri%20d%C3%B6nmek%20uzun%20s%C3%BCr%C3%BCyor%20bitince.%20giri%C5%9F%20k%C4%B1sm%C4%B1n%C4%B1%20bi%E2%80%A6&amp;p[images][0]=https://eksisozluk1923.com/content/img/ilogo_fbv2.png&amp;v=1" aria-label="facebook" title="facebook" class="svgico svgico-facebook">
+                                  <svg class="eksico" id="svg-icon-facebook">
+                                    <use xlink:href="#eksico-icon-facebook">
+                                    </use>
+                                  </svg>
+                                  facebook
+                                </a>
+                              </li>
+                              <li class="share-links">
+                                <a target="_blank" rel="nofollow noopener" href="/entry/tweet/119914723" aria-label="twitter" title="twitter" class="svgico svgico-twitter">
+                                  <svg class="eksico" id="svg-icon-twitter">
+                                    <use xlink:href="#eksico-icon-twitter">
+                                    </use>
+                                  </svg>
+                                  twitter
+                                </a>
+                              </li>
+                              <li class="share-links">
+                                <a id="copy-to-clipboard-entry-link" class="svgico svgico-copy-link">
+                                  <svg class="eksico" id="svg-copy-link">
+                                    <use xlink:href="#eksico-copy-link">
+                                    </use>
+                                  </svg>
+                                  entry link'ini kopyala
+                                </a>
+                              </li>
+                              <li class="share-links">
+                                <a id="copy-to-clipboard-entry-number" class="svgico svgico-hashtag">
+                                  <svg class="eksico" id="svg-hashtag">
+                                    <use xlink:href="#eksico-hashtag">
+                                    </use>
+                                  </svg>
+                                  entry no kopyala
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="other dropdown">
+                            <a class="others dropdown-toggle toggles" title="diğer">
+                              <svg class="eksico" id="svg-dots">
+                                <use xlink:href="#eksico-dots">
+                                </use>
+                              </svg>
+                            </a>
+                            <ul class="dropdown-menu right toggles-menu">
+                              <li>
+                                <a class="report-link" title="aynen öyle" href="/iletisim?RefEntryId=119914723&amp;Category=Content&amp;Subject='66%2050'n%2028%2040'e'%20ba%C5%9Fl%C4%B1%C4%9F%C4%B1ndaki%20%23119914723%20no'lu%20entry">
+                                  şikayet
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <span class="rate-options">
+                          <a class="like" title="şükela!">
+                            <span>
+                            </span>
+                            <svg class="eksico" id="svg-chevron-up">
+                              <use xlink:href="#eksico-chevron-up">
+                              </use>
+                            </svg>
+                          </a>
+                          <a class="dislike" title="çok kötü">
+                            <span>
+                            </span>
+                            <svg class="eksico" id="svg-chevron-down">
+                              <use xlink:href="#eksico-chevron-down">
+                              </use>
+                            </svg>
+                          </a>
+                        </span>
+                      </div>
+                      <div class="info">
+                        <div class="entry-footer-bottom">
+                          <div class="footer-info">
+                            <div id="entry-nick-container">
+                              <div id="entry-author">
+                                <a class="entry-author" href="">
+                                    not a bruh like you
+                                </a>
+                              </div>
+                            </div>
+                            <div>
+                              <a class="entry-date permalink" href="">
+                                22.02.2021 22:09 ~ 23:00
+                              </a>
+                            </div>
+                          </div>
+                          <div class="avatar-container">
+                            <a href="/biri/nonelikeyou">
+                              <img class="avatar" src="https://ekstat.com/img/default-profile-picture-light.svg" data-default="//ekstat.com/img/default-profile-picture-light.svg" alt="nonelikeyou" title="nonelikeyou">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </footer>
+                    <div class="comment-summary">
+                      <div class="comment-pages">
+                      </div>
+                    </div>
+                  </li>
+                  <li data-id="126344266" data-author="bruh" data-author-id="1922184" data-flags="share report vote" data-isfavorite="false" data-ispinned="false" data-ispinnedonprofile="false" data-favorite-count="2" data-seyler-slug="" data-comment-count="0" id="entry-item" data-show="true">
+                    <div class="content">
+                      <a class="b" >
+                        juha raivio
+                      </a>
+                      bugün şarkı için bir 
+                      <a rel="nofollow noopener" class="url" target="_blank">
+                        facebook gönderisi
+                      </a>
+                      paylaşmış.
+                      <br>
+                      <br>
+                      --- 
+                      <a class="b" >
+                        spoiler
+                      </a>
+                      ---
+                      <br>
+                      <br>
+                      the first years of my life i lived in lapland, very high up north in finland. i wrote this song remembering the deadly cold winters that felt like needles in your face and the never ending dark, dancing northern lights in the skies and again never ending light at the summer times, a truly magical place called salla. i remember writing this song and for some reason seeing those landscapes from my childhood clearly through the eyes of an eagle. so i wanted to capture this flying emotion in this song. 
+                      <br>
+                      it is strange how the first years of your life have been carved so deep into your soul.
+                      <br>
+                      <br>
+                      -j-
+                      <br>
+                      <br>
+                      --- 
+                      <a class="b">
+                        spoiler
+                      </a>
+                      ---
+                    </div>
+                    <span class="read-more-link-wrapper">
+                      <a>
+                        <svg class="eksico" id="svg-dots-readmore">
+                          <use xlink:href="#eksico-dots">
+                          </use>
+                        </svg>
+                        devamını okuyayım
+                      </a>
+                    </span>
+                    <footer>
+                      <div class="feedback-container">
+                        <div class="feedback">
+                          <div class="entry-share dropdown">
+                            <a class="entry-share dropdown-toggle toggles" title="share">
+                              <svg class="eksico" id="svg-share">
+                                <use xlink:href="#eksico-share">
+                                </use>
+                              </svg>
+                            </a>
+                            <ul class="dropdown-menu right toggles-menu">
+                              <li class="share-links">
+                                <a target="_blank" rel="nofollow noopener" aria-label="facebook" title="facebook" class="svgico svgico-facebook">
+                                  <svg class="eksico" id="svg-icon-facebook">
+                                    <use xlink:href="#eksico-icon-facebook">
+                                    </use>
+                                  </svg>
+                                  facebook
+                                </a>
+                              </li>
+                              <li class="share-links">
+                                <a target="_blank" rel="nofollow noopener" href="/entry/tweet/126344266" aria-label="twitter" title="twitter" class="svgico svgico-twitter">
+                                  <svg class="eksico" id="svg-icon-twitter">
+                                    <use xlink:href="#eksico-icon-twitter">
+                                    </use>
+                                  </svg>
+                                  twitter
+                                </a>
+                              </li>
+                              <li class="share-links">
+                                <a id="copy-to-clipboard-entry-link" class="svgico svgico-copy-link">
+                                  <svg class="eksico" id="svg-copy-link">
+                                    <use xlink:href="#eksico-copy-link">
+                                    </use>
+                                  </svg>
+                                  entry link'ini kopyala
+                                </a>
+                              </li>
+                              <li class="share-links">
+                                <a id="copy-to-clipboard-entry-number" class="svgico svgico-hashtag">
+                                  <svg class="eksico" id="svg-hashtag">
+                                    <use xlink:href="#eksico-hashtag">
+                                    </use>
+                                  </svg>
+                                  entry no kopyala
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="other dropdown">
+                            <a class="others dropdown-toggle toggles" title="diğer">
+                              <svg class="eksico" id="svg-dots">
+                                <use xlink:href="#eksico-dots">
+                                </use>
+                              </svg>
+                            </a>
+                            <ul class="dropdown-menu right toggles-menu">
+                              <li>
+                                <a class="report-link" title="aynen öyle" >
+                                  şikayet
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <span class="rate-options">
+                          <a class="like" title="şükela!">
+                            <span>
+                            </span>
+                            <svg class="eksico" id="svg-chevron-up">
+                              <use xlink:href="#eksico-chevron-up">
+                              </use>
+                            </svg>
+                          </a>
+                          <a class="dislike" title="çok kötü">
+                            <span>
+                            </span>
+                            <svg class="eksico" id="svg-chevron-down">
+                              <use xlink:href="#eksico-chevron-down">
+                              </use>
+                            </svg>
+                          </a>
+                        </span>
+                      </div>
+                      <div class="info">
+                        <div class="entry-footer-bottom">
+                          <div class="footer-info">
+                            <div id="entry-nick-container">
+                              <div id="entry-author">
+                                <a class="entry-author" href="">
+                                    bruh
+                                </a>
+                              </div>
+                            </div>
+                            <div>
+                              <a class="entry-date permalink" href="">
+                                31.07.2021 11:24
+                              </a>
+                            </div>
+                          </div>
+                          <div class="avatar-container">
+                            <a href="">
+                              <img class="avatar" src="https://ekstat.com/img/default-profile-picture-light.svg"  data-default="//ekstat.com/img/default-profile-picture-light.svg" alt="qf4" title="qf4">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </footer>
+                    <div class="comment-summary">
+                      <div class="comment-pages">
+                      </div>
+                    </div>
+                  </li>
+                  <li data-id="126344266" data-author="bruh" data-author-id="1922184" data-flags="share report vote" data-isfavorite="false" data-ispinned="false" data-ispinnedonprofile="false" data-favorite-count="2" data-seyler-slug="" data-comment-count="0" id="entry-item" data-show="true">
+                    <div class="content">
+                      <br>
+                      juha raivio bu şarkıyı salladaki kavşağın yakınlarındaki restoranda yazdığını bir röportajda söylemiş.  
+                      <br>
+                      <br>
+                      <br>
+                    </div>
+                    <footer>
+                      <div class="feedback-container">
+                        <div class="feedback">
+                          <div class="entry-share dropdown">
+                            <a class="entry-share dropdown-toggle toggles" title="share">
+                              <svg class="eksico" id="svg-share">
+                                <use xlink:href="#eksico-share">
+                                </use>
+                              </svg>
+                            </a>
+                            <ul class="dropdown-menu right toggles-menu">
+                              <li class="share-links">
+                                <a target="_blank" rel="nofollow noopener" href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Feksisozluk1923.com%2Fentry%2F126344266&amp;p[title]=66%2050'n%2028%2040'e&amp;p[summary]=juha%20raivio%20bug%C3%BCn%20%C5%9Fark%C4%B1%20i%C3%A7in%20bir%20facebook%20g%C3%B6nderisi%20payla%C5%9Fm%C4%B1%C5%9F.---%20spoiler%20---the%20first%20years%20of%20my%20life%20i%20lived%20in%20lapland%2C%20very%20high%20up%20north%20in%20finland.%20i%20wrote%20this%20song%20remembering%20the%20deadly%20cold%20winters%20that%20felt%20like%20needles%20in%20your%20face%20and%20t%E2%80%A6&amp;p[images][0]=https://eksisozluk1923.com/content/img/ilogo_fbv2.png&amp;v=1" aria-label="facebook" title="facebook" class="svgico svgico-facebook">
+                                  <svg class="eksico" id="svg-icon-facebook">
+                                    <use xlink:href="#eksico-icon-facebook">
+                                    </use>
+                                  </svg>
+                                  facebook
+                                </a>
+                              </li>
+                              <li class="share-links">
+                                <a target="_blank" rel="nofollow noopener" href="/entry/tweet/126344266" aria-label="twitter" title="twitter" class="svgico svgico-twitter">
+                                  <svg class="eksico" id="svg-icon-twitter">
+                                    <use xlink:href="#eksico-icon-twitter">
+                                    </use>
+                                  </svg>
+                                  twitter
+                                </a>
+                              </li>
+                              <li class="share-links">
+                                <a id="copy-to-clipboard-entry-link" class="svgico svgico-copy-link">
+                                  <svg class="eksico" id="svg-copy-link">
+                                    <use xlink:href="#eksico-copy-link">
+                                    </use>
+                                  </svg>
+                                  entry link'ini kopyala
+                                </a>
+                              </li>
+                              <li class="share-links">
+                                <a id="copy-to-clipboard-entry-number" class="svgico svgico-hashtag">
+                                  <svg class="eksico" id="svg-hashtag">
+                                    <use xlink:href="#eksico-hashtag">
+                                    </use>
+                                  </svg>
+                                  entry no kopyala
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="other dropdown">
+                            <a class="others dropdown-toggle toggles" title="diğer">
+                              <svg class="eksico" id="svg-dots">
+                                <use xlink:href="#eksico-dots">
+                                </use>
+                              </svg>
+                            </a>
+                            <ul class="dropdown-menu right toggles-menu">
+                              <li>
+                                <a class="report-link" title="aynen öyle" href="/iletisim?RefEntryId=126344266&amp;Category=Content&amp;Subject='66%2050'n%2028%2040'e'%20ba%C5%9Fl%C4%B1%C4%9F%C4%B1ndaki%20%23126344266%20no'lu%20entry">
+                                  şikayet
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <span class="rate-options">
+                          <a class="like" title="şükela!">
+                            <span>
+                            </span>
+                            <svg class="eksico" id="svg-chevron-up">
+                              <use xlink:href="#eksico-chevron-up">
+                              </use>
+                            </svg>
+                          </a>
+                          <a class="dislike" title="çok kötü">
+                            <span>
+                            </span>
+                            <svg class="eksico" id="svg-chevron-down">
+                              <use xlink:href="#eksico-chevron-down">
+                              </use>
+                            </svg>
+                          </a>
+                        </span>
+                      </div>
+                      <div class="info">
+                        <div class="entry-footer-bottom">
+                          <div class="footer-info">
+                            <div id="entry-nick-container">
+                              <div id="entry-author">
+                                <a class="entry-author" href="">
+                                    bruh 👽 bruh
+                                </a>
+                              </div>
+                            </div>
+                            <div>
+                              <a class="entry-date permalink" href="">
+                                31.07.2021 11:36
+                              </a>
+                            </div>
+                          </div>
+                          <div class="avatar-container">
+                            <a href="">
+                              <img class="avatar" src="https://ekstat.com/img/default-profile-picture-light.svg"  data-default="//ekstat.com/img/default-profile-picture-light.svg" alt="qf4" title="qf4">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </footer>
+                    <div class="comment-summary">
+                      <div class="comment-pages">
+                      </div>
+                    </div>
+                  </li>
+                  <li data-id="129295103" data-author="shades of bruh" data-author-id="1498719" data-flags="share report vote" data-isfavorite="false" data-ispinned="false" data-ispinnedonprofile="false" data-favorite-count="0" data-seyler-slug="" data-comment-count="0" id="entry-item" data-show="true">
+                    <div class="content">
+                      <a rel="nofollow noopener" class="url" target="_blank" href="https://www.google.com/maps/@66.8333338,28.6668023,3a,59.7y,166.85h,74.61t/data=!3m7!1e1!3m5!1ss5wmhUGQFooo9JnxI-VgbA!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fpanoid%3Ds5wmhUGQFooo9JnxI-VgbA%26cb_client%3Dsearch.revgeo_and_fetch.gps%26w%3D96%26h%3D64%26yaw%3D185.83664%26pitch%3D0%26thumbfov%3D100!7i13312!8i6656" title="https://www.google.com/maps/@66.8333338,28.6668023,3a,59.7y,166.85h,74.61t/data=!3m7!1e1!3m5!1ss5wmhUGQFooo9JnxI-VgbA!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fpanoid%3Ds5wmhUGQFooo9JnxI-VgbA%26cb_client%3Dsearch.revgeo_and_fetch.gps%26w%3D96%26h%3D64%26yaw%3D185.83664%26pitch%3D0%26thumbfov%3D100!7i13312!8i6656">
+                        konumun google street view linki
+                      </a>
+                    </div>
+                    <footer>
+                      <div class="feedback-container">
+                        <div class="feedback">
+                          <div class="entry-share dropdown">
+                            <a class="entry-share dropdown-toggle toggles" title="share">
+                              <svg class="eksico" id="svg-share">
+                                <use xlink:href="#eksico-share">
+                                </use>
+                              </svg>
+                            </a>
+                            <ul class="dropdown-menu right toggles-menu">
+                              <li class="share-links">
+                                <a target="_blank" rel="nofollow noopener" href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Feksisozluk1923.com%2Fentry%2F129295103&amp;p[title]=66%2050'n%2028%2040'e&amp;p[summary]=%0A%20%20%20%20konumun%20google%20street%20view%20linki%0A%20%20&amp;p[images][0]=https://eksisozluk1923.com/content/img/ilogo_fbv2.png&amp;v=1" aria-label="facebook" title="facebook" class="svgico svgico-facebook">
+                                  <svg class="eksico" id="svg-icon-facebook">
+                                    <use xlink:href="#eksico-icon-facebook">
+                                    </use>
+                                  </svg>
+                                  facebook
+                                </a>
+                              </li>
+                              <li class="share-links">
+                                <a target="_blank" rel="nofollow noopener" href="/entry/tweet/129295103" aria-label="twitter" title="twitter" class="svgico svgico-twitter">
+                                  <svg class="eksico" id="svg-icon-twitter">
+                                    <use xlink:href="#eksico-icon-twitter">
+                                    </use>
+                                  </svg>
+                                  twitter
+                                </a>
+                              </li>
+                              <li class="share-links">
+                                <a id="copy-to-clipboard-entry-link" class="svgico svgico-copy-link">
+                                  <svg class="eksico" id="svg-copy-link">
+                                    <use xlink:href="#eksico-copy-link">
+                                    </use>
+                                  </svg>
+                                  entry link'ini kopyala
+                                </a>
+                              </li>
+                              <li class="share-links">
+                                <a id="copy-to-clipboard-entry-number" class="svgico svgico-hashtag">
+                                  <svg class="eksico" id="svg-hashtag">
+                                    <use xlink:href="#eksico-hashtag">
+                                    </use>
+                                  </svg>
+                                  entry no kopyala
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="other dropdown">
+                            <a class="others dropdown-toggle toggles" title="diğer">
+                              <svg class="eksico" id="svg-dots">
+                                <use xlink:href="#eksico-dots">
+                                </use>
+                              </svg>
+                            </a>
+                            <ul class="dropdown-menu right toggles-menu">
+                              <li>
+                                <a class="report-link" title="aynen öyle" href="/iletisim?RefEntryId=129295103&amp;Category=Content&amp;Subject='66%2050'n%2028%2040'e'%20ba%C5%9Fl%C4%B1%C4%9F%C4%B1ndaki%20%23129295103%20no'lu%20entry">
+                                  şikayet
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <span class="rate-options">
+                          <a class="like" title="şükela!">
+                            <span>
+                            </span>
+                            <svg class="eksico" id="svg-chevron-up">
+                              <use xlink:href="#eksico-chevron-up">
+                              </use>
+                            </svg>
+                          </a>
+                          <a class="dislike" title="çok kötü">
+                            <span>
+                            </span>
+                            <svg class="eksico" id="svg-chevron-down">
+                              <use xlink:href="#eksico-chevron-down">
+                              </use>
+                            </svg>
+                          </a>
+                        </span>
+                      </div>
+                      <div class="info">
+                        <div class="entry-footer-bottom">
+                          <div class="footer-info">
+                            <div id="entry-nick-container">
+                              <div id="entry-author">
+                                <a class="entry-author" href="">
+                                    shades of bruh
+                                </a>
+                              </div>
+                            </div>
+                            <div>
+                              <a class="entry-date permalink" href="">
+                                21.10.2021 18:32
+                              </a>
+                            </div>
+                          </div>
+                          <div class="avatar-container">
+                            <a href="/biri/shades-of-fucking-grey">
+                              <img class="avatar" src="https://ekstat.com/img/default-profile-picture-light.svg" data-default="//ekstat.com/img/default-profile-picture-light.svg" alt="shades of fucking grey" title="shades of fucking grey">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </footer>
+                    <div class="comment-summary">
+                      <div class="comment-pages">
+                      </div>
+                    </div>
+                  </li>
+                  <div id="networkad-inread-video-ad" style="list-style:none">
+                    <div id="div_571">
+                    </div>
+                  </div>
+                  <div class="ad-double-click ad-1x1 ad-banner ad-doubleclickwebaffiliateentry ads" data-info="{&quot;NetworkIdentifier&quot;:&quot;/1024435/desktop_web_affiliate_entry&quot;,&quot;Slot&quot;:&quot;div-gpt-ad-1501666779243-0&quot;,&quot;NetworkCode&quot;:&quot;1024435&quot;,&quot;Target&quot;:&quot;desktop_web_affiliate_entry&quot;,&quot;IsLazyLoad&quot;:false,&quot;Size&quot;:[1,1],&quot;Name&quot;:&quot;DoubleClickWebAffiliateEntry&quot;,&quot;DisplayTypes&quot;:4}" id="web-sponsored-entry" style="">
+                    <div id="div-gpt-ad-1501666779243-0" data-google-query-id="COW2qsmB6YEDFQmcdwodWmwGtg" class="style-iLwei">
+                      <div id="google_ads_iframe_/1024435/desktop_web_affiliate_entry_0__container__" class="style-8gt5l">
+                      </div>
+                    </div>
+                  </div>
+                  <li data-id="141103991" data-author="edin bruh" data-author-id="1825747" data-flags="share report vote" data-isfavorite="false" data-ispinned="false" data-ispinnedonprofile="false" data-favorite-count="0" data-seyler-slug="" data-comment-count="0" id="entry-item" data-show="true">
+                    <div class="content">
+                      hakkında bu kadar entry girilmesi karşısında insanın şaşkınlığını gizleyemediği bir 
+                      <a class="b">
+                        swallow the sun
+                      </a>
+                      eseri. eser diyorum çünkü şarkıda söz yok, sadece melodi var. fakat öyle bir melodi ki insanın ruhunu zıplatıyor.
+                    </div>
+                    <footer>
+                      <div class="feedback-container">
+                        <div class="feedback">
+                          <div class="entry-share dropdown">
+                            <a class="entry-share dropdown-toggle toggles" title="share">
+                              <svg class="eksico" id="svg-share">
+                                <use xlink:href="#eksico-share">
+                                </use>
+                              </svg>
+                            </a>
+                            <ul class="dropdown-menu right toggles-menu">
+                              <li class="share-links">
+                                <a target="_blank" rel="nofollow noopener" href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Feksisozluk1923.com%2Fentry%2F141103991&amp;p[title]=66%2050'n%2028%2040'e&amp;p[summary]=%0A%20%20%20%20hakk%C4%B1nda%20bu%20kadar%20entry%20girilmesi%20kar%C5%9F%C4%B1s%C4%B1nda%20insan%C4%B1n%20%C5%9Fa%C5%9Fk%C4%B1nl%C4%B1%C4%9F%C4%B1n%C4%B1%20gizleyemedi%C4%9Fi%20bir%20swallow%20the%20sun%20eseri.%20eser%20diyorum%20%C3%A7%C3%BCnk%C3%BC%20%C5%9Fark%C4%B1da%20s%C3%B6z%20yok%2C%20sadece%20melodi%20var.%20fakat%20%C3%B6yle%20bir%20melodi%20ki%20insan%C4%B1n%20ruhunu%20z%C4%B1plat%C4%B1yor.%0A%20%20&amp;p[images][0]=https://eksisozluk1923.com/content/img/ilogo_fbv2.png&amp;v=1" aria-label="facebook" title="facebook" class="svgico svgico-facebook">
+                                  <svg class="eksico" id="svg-icon-facebook">
+                                    <use xlink:href="#eksico-icon-facebook">
+                                    </use>
+                                  </svg>
+                                  facebook
+                                </a>
+                              </li>
+                              <li class="share-links">
+                                <a target="_blank" rel="nofollow noopener" href="/entry/tweet/141103991" aria-label="twitter" title="twitter" class="svgico svgico-twitter">
+                                  <svg class="eksico" id="svg-icon-twitter">
+                                    <use xlink:href="#eksico-icon-twitter">
+                                    </use>
+                                  </svg>
+                                  twitter
+                                </a>
+                              </li>
+                              <li class="share-links">
+                                <a id="copy-to-clipboard-entry-link" class="svgico svgico-copy-link">
+                                  <svg class="eksico" id="svg-copy-link">
+                                    <use xlink:href="#eksico-copy-link">
+                                    </use>
+                                  </svg>
+                                  entry link'ini kopyala
+                                </a>
+                              </li>
+                              <li class="share-links">
+                                <a id="copy-to-clipboard-entry-number" class="svgico svgico-hashtag">
+                                  <svg class="eksico" id="svg-hashtag">
+                                    <use xlink:href="#eksico-hashtag">
+                                    </use>
+                                  </svg>
+                                  entry no kopyala
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="other dropdown">
+                            <a class="others dropdown-toggle toggles" title="diğer">
+                              <svg class="eksico" id="svg-dots">
+                                <use xlink:href="#eksico-dots">
+                                </use>
+                              </svg>
+                            </a>
+                            <ul class="dropdown-menu right toggles-menu">
+                              <li>
+                                <a class="report-link" title="aynen öyle" href="/iletisim?RefEntryId=141103991&amp;Category=Content&amp;Subject='66%2050'n%2028%2040'e'%20ba%C5%9Fl%C4%B1%C4%9F%C4%B1ndaki%20%23141103991%20no'lu%20entry">
+                                  şikayet
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <span class="rate-options">
+                          <a class="like" title="şükela!">
+                            <span>
+                            </span>
+                            <svg class="eksico" id="svg-chevron-up">
+                              <use xlink:href="#eksico-chevron-up">
+                              </use>
+                            </svg>
+                          </a>
+                          <a class="dislike" title="çok kötü">
+                            <span>
+                            </span>
+                            <svg class="eksico" id="svg-chevron-down">
+                              <use xlink:href="#eksico-chevron-down">
+                              </use>
+                            </svg>
+                          </a>
+                        </span>
+                      </div>
+                      <div class="info">
+                        <div class="entry-footer-bottom">
+                          <div class="footer-info">
+                            <div id="entry-nick-container">
+                              <div id="entry-author">
+                                <a class="entry-author" href="edin bruh">
+                                    edin bruh
+                                </a>
+                              </div>
+                              <div id="subscriber-badge-entry">
+                                <svg class="eksico subscriber-badge" id="svg-subscriber-badge">
+                                  <use xlink:href="#eksico-status-badge">
+                                  </use>
+                                </svg>
+                              </div>
+                            </div>
+                            <div>
+                              <a class="entry-date permalink" href="">
+                                09.08.2022 23:09
+                              </a>
+                            </div>
+                          </div>
+                          <div class="avatar-container">
+                            <a href="/biri/beter-mi">
+                              <img class="avatar" src="https://ekstat.com/img/default-profile-picture-light.svg" data-default="//ekstat.com/img/default-profile-picture-light.svg" alt="beter mi" title="beter mi">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </footer>
+                    <div class="comment-summary">
+                      <div class="comment-pages">
+                      </div>
+                    </div>
+                  </li>
+                  <li data-id="143824640" data-author="the master of bruhs" data-author-id="1206829" data-flags="share report vote" data-isfavorite="false" data-ispinned="false" data-ispinnedonprofile="false" data-favorite-count="0" data-seyler-slug="" data-comment-count="0" id="entry-item" data-show="true">
+                    <div class="content">
+                      akşam akşam hüngür hüngür ağladığım enstrümantal parça... öyle ki söz yazıp üzerine okuyasım var...
+                    </div>
+                    <footer>
+                      <div class="feedback-container">
+                        <div class="feedback">
+                          <div class="entry-share dropdown">
+                            <a class="entry-share dropdown-toggle toggles" title="share">
+                              <svg class="eksico" id="svg-share">
+                                <use xlink:href="#eksico-share">
+                                </use>
+                              </svg>
+                            </a>
+                            <ul class="dropdown-menu right toggles-menu">
+                              <li class="share-links">
+                                <a target="_blank" rel="nofollow noopener" href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Feksisozluk1923.com%2Fentry%2F143824640&amp;p[title]=66%2050'n%2028%2040'e&amp;p[summary]=%0A%20%20%20%20ak%C5%9Fam%20ak%C5%9Fam%20a%C4%9Fz%C4%B1ma%20sicmis%20enstr%C3%BCmantal%20par%C3%A7a...%20%C3%B6yle%20ki%20s%C3%B6z%20yaz%C4%B1p%20%C3%BCzerine%20okuyas%C4%B1m%20var...%0A%20%20&amp;p[images][0]=https://eksisozluk1923.com/content/img/ilogo_fbv2.png&amp;v=1" aria-label="facebook" title="facebook" class="svgico svgico-facebook">
+                                  <svg class="eksico" id="svg-icon-facebook">
+                                    <use xlink:href="#eksico-icon-facebook">
+                                    </use>
+                                  </svg>
+                                  facebook
+                                </a>
+                              </li>
+                              <li class="share-links">
+                                <a target="_blank" rel="nofollow noopener" href="/entry/tweet/143824640" aria-label="twitter" title="twitter" class="svgico svgico-twitter">
+                                  <svg class="eksico" id="svg-icon-twitter">
+                                    <use xlink:href="#eksico-icon-twitter">
+                                    </use>
+                                  </svg>
+                                  twitter
+                                </a>
+                              </li>
+                              <li class="share-links">
+                                <a id="copy-to-clipboard-entry-link" class="svgico svgico-copy-link">
+                                  <svg class="eksico" id="svg-copy-link">
+                                    <use xlink:href="#eksico-copy-link">
+                                    </use>
+                                  </svg>
+                                  entry link'ini kopyala
+                                </a>
+                              </li>
+                              <li class="share-links">
+                                <a id="copy-to-clipboard-entry-number" class="svgico svgico-hashtag">
+                                  <svg class="eksico" id="svg-hashtag">
+                                    <use xlink:href="#eksico-hashtag">
+                                    </use>
+                                  </svg>
+                                  entry no kopyala
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="other dropdown">
+                            <a class="others dropdown-toggle toggles" title="diğer">
+                              <svg class="eksico" id="svg-dots">
+                                <use xlink:href="#eksico-dots">
+                                </use>
+                              </svg>
+                            </a>
+                            <ul class="dropdown-menu right toggles-menu">
+                              <li>
+                                <a class="report-link" title="aynen öyle" href="/iletisim?RefEntryId=143824640&amp;Category=Content&amp;Subject='66%2050'n%2028%2040'e'%20ba%C5%9Fl%C4%B1%C4%9F%C4%B1ndaki%20%23143824640%20no'lu%20entry">
+                                  şikayet
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <span class="rate-options">
+                          <a class="like" title="şükela!">
+                            <span>
+                            </span>
+                            <svg class="eksico" id="svg-chevron-up">
+                              <use xlink:href="#eksico-chevron-up">
+                              </use>
+                            </svg>
+                          </a>
+                          <a class="dislike" title="çok kötü">
+                            <span>
+                            </span>
+                            <svg class="eksico" id="svg-chevron-down">
+                              <use xlink:href="#eksico-chevron-down">
+                              </use>
+                            </svg>
+                          </a>
+                        </span>
+                      </div>
+                      <div class="info">
+                        <div class="entry-footer-bottom">
+                          <div class="footer-info">
+                            <div id="entry-nick-container">
+                              <div id="entry-author">
+                                <a class="entry-author" href="">
+                                  the master of bruhs
+                                </a>
+                              </div>
+                            </div>
+                            <div>
+                              <a class="entry-date permalink" href="">
+                                12.10.2022 18:18
+                              </a>
+                            </div>
+                          </div>
+                          <div class="avatar-container">
+                            <a href="/biri/the-master-of-apprentices">
+                              <img class="avatar" src="https://ekstat.com/img/default-profile-picture-light.svg" data-default="//ekstat.com/img/default-profile-picture-light.svg" alt="the master of apprentices" title="the master of apprentices">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </footer>
+                    <div class="comment-summary">
+                      <div class="comment-pages">
+                      </div>
+                    </div>
+                  </li>
+                  <li data-id="151065657" data-author="prenses bruh" data-author-id="3078325" data-flags="share report vote" data-isfavorite="false" data-ispinned="false" data-ispinnedonprofile="false" data-favorite-count="0" data-seyler-slug="" data-comment-count="0" id="entry-item" data-show="true">
+                    <div class="content">
+                      hani böyle durup dururken yüreğinize bir yumru oturur, sizi üzen şeyler yüz üstüne çıkar ya... dinleyince bana bundan oldu. bilinmeyen bir grubun enfes şarkısı.
+                    </div>
+                    <footer>
+                      <div class="feedback-container">
+                        <div class="feedback">
+                          <div class="entry-share dropdown">
+                            <a class="entry-share dropdown-toggle toggles" title="share">
+                              <svg class="eksico" id="svg-share">
+                                <use xlink:href="#eksico-share">
+                                </use>
+                              </svg>
+                            </a>
+                            <ul class="dropdown-menu right toggles-menu">
+                              <li class="share-links">
+                                <a target="_blank" rel="nofollow noopener" href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Feksisozluk1923.com%2Fentry%2F151065657&amp;p[title]=66%2050'n%2028%2040'e&amp;p[summary]=%0A%20%20%20%20hani%20b%C3%B6yle%20durup%20dururken%20y%C3%BCre%C4%9Finize%20bir%20yumru%20oturur%2C%20sizi%20%C3%BCzen%20%C5%9Feyler%20y%C3%BCz%20%C3%BCst%C3%BCne%20%C3%A7%C4%B1kar%20ya...%20dinleyince%20bana%20bundan%20oldu.%20bilinmeyen%20bir%20grubun%20enfes%20%C5%9Fark%C4%B1s%C4%B1.%0A%20%20&amp;p[images][0]=https://eksisozluk1923.com/content/img/ilogo_fbv2.png&amp;v=1" aria-label="facebook" title="facebook" class="svgico svgico-facebook">
+                                  <svg class="eksico" id="svg-icon-facebook">
+                                    <use xlink:href="#eksico-icon-facebook">
+                                    </use>
+                                  </svg>
+                                  facebook
+                                </a>
+                              </li>
+                              <li class="share-links">
+                                <a target="_blank" rel="nofollow noopener" href="/entry/tweet/151065657" aria-label="twitter" title="twitter" class="svgico svgico-twitter">
+                                  <svg class="eksico" id="svg-icon-twitter">
+                                    <use xlink:href="#eksico-icon-twitter">
+                                    </use>
+                                  </svg>
+                                  twitter
+                                </a>
+                              </li>
+                              <li class="share-links">
+                                <a id="copy-to-clipboard-entry-link" class="svgico svgico-copy-link">
+                                  <svg class="eksico" id="svg-copy-link">
+                                    <use xlink:href="#eksico-copy-link">
+                                    </use>
+                                  </svg>
+                                  entry link'ini kopyala
+                                </a>
+                              </li>
+                              <li class="share-links">
+                                <a id="copy-to-clipboard-entry-number" class="svgico svgico-hashtag">
+                                  <svg class="eksico" id="svg-hashtag">
+                                    <use xlink:href="#eksico-hashtag">
+                                    </use>
+                                  </svg>
+                                  entry no kopyala
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="other dropdown">
+                            <a class="others dropdown-toggle toggles" title="diğer">
+                              <svg class="eksico" id="svg-dots">
+                                <use xlink:href="#eksico-dots">
+                                </use>
+                              </svg>
+                            </a>
+                            <ul class="dropdown-menu right toggles-menu">
+                              <li>
+                                <a class="report-link" title="aynen öyle" href="/iletisim?RefEntryId=151065657&amp;Category=Content&amp;Subject='66%2050'n%2028%2040'e'%20ba%C5%9Fl%C4%B1%C4%9F%C4%B1ndaki%20%23151065657%20no'lu%20entry">
+                                  şikayet
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <span class="rate-options">
+                          <a class="like" title="şükela!">
+                            <span>
+                            </span>
+                            <svg class="eksico" id="svg-chevron-up">
+                              <use xlink:href="#eksico-chevron-up">
+                              </use>
+                            </svg>
+                          </a>
+                          <a class="dislike" title="çok kötü">
+                            <span>
+                            </span>
+                            <svg class="eksico" id="svg-chevron-down">
+                              <use xlink:href="#eksico-chevron-down">
+                              </use>
+                            </svg>
+                          </a>
+                        </span>
+                      </div>
+                      <div class="info">
+                        <div class="entry-footer-bottom">
+                          <div class="footer-info">
+                            <div id="entry-nick-container">
+                              <div id="entry-author">
+                                <a class="entry-author" href="">
+                                    prenses bruh
+                                </a>
+                              </div>
+                            </div>
+                            <div>
+                              <a class="entry-date permalink" href="7">
+                                07.04.2023 23:10
+                              </a>
+                            </div>
+                          </div>
+                          <div class="avatar-container">
+                            <a href="/biri/gizemlipres">
+                              <img class="avatar" src="https://ekstat.com/img/default-profile-picture-light.svg" data-default="//ekstat.com/img/default-profile-picture-light.svg" alt="gizemlipres" title="gizemlipres">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </footer>
+                    <div class="comment-summary">
+                      <div class="comment-pages">
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div id="login-signup">
+                <div id="logo">
+                  <a tabindex="-1">
+                  </a>
+                </div>
+                <div>
+                  <p class="login-signup-desc">
+                    tatlı sözlük kullanıcılarıyla mesajlaşmak ve yazdıkları entry'leri 
+                    <br>
+                    takip etmek için giriş yapmalısın.
+                  </p>
+                </div>
+                <div id="action-field">
+                  <div>
+                    <button id="anon-singup" data-href="/kayit">
+                      kayıt ol
+                    </button>
+                  </div>
+                  <div>
+                    hesabın var mı? 
+                    <a href="/giris?returnUrl=%2F66-50n-28-40e--6438366">
+                      giriş yap
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <aside id="aside" style="margin-top: 10px">
+              <div id="_adr_abp_container_2" data-section="8510ce5fda595abbda3bedb3d7fc82f5" data-packetid="00000001-f46e4606-6f2d-4e23-9daa-49f6d203dceb" class="_adr_abp_container style-y4q7L">
+               
+              </div>
+              <div class="ad-double-click ad-1x1 ad-banner ad-doubleclickwebcountdown ads" data-info="{&quot;NetworkIdentifier&quot;:&quot;/138586269/desktop_web_countdown&quot;,&quot;Slot&quot;:&quot;div-gpt-ad-1511442987015-0&quot;,&quot;NetworkCode&quot;:&quot;138586269&quot;,&quot;Target&quot;:&quot;desktop_web_countdown&quot;,&quot;IsLazyLoad&quot;:false,&quot;Size&quot;:[1,1],&quot;Name&quot;:&quot;DoubleClickWebCountDown&quot;,&quot;DisplayTypes&quot;:4}">
+                <div id="div-gpt-ad-1511442987015-0" data-google-query-id="CLn1qsmB6YEDFUGcgwcdh4ABCA" class="style-gy943">
+                  <div id="google_ads_iframe_/138586269/desktop_web_countdown_0__container__" class="style-9SnEn">
+                  </div>
+                </div>
+              </div>
+              <div class="ad-double-click ad-300x250 ad-banner ad-doubleclickwebside ads style-ojqWq" data-info="{&quot;NetworkIdentifier&quot;:&quot;/1024435/desktop_web_side&quot;,&quot;Slot&quot;:&quot;div-gpt-ad-1507285907658-1&quot;,&quot;NetworkCode&quot;:&quot;1024435&quot;,&quot;Target&quot;:&quot;desktop_web_side&quot;,&quot;IsLazyLoad&quot;:false,&quot;Size&quot;:[300,250],&quot;Name&quot;:&quot;DoubleClickWebSide&quot;,&quot;DisplayTypes&quot;:4}" id="style-ojqWq">
+                <div id="div-gpt-ad-1507285907658-1" style="" data-google-query-id="CMr7q8mB6YEDFVKWgwcdrZgGpQ">
+                  <div id="google_ads_iframe_/1024435/desktop_web_side_0__container__" class="style-kZwG4">
+                    <iframe frameborder="0" src="https://99ac5712b4c45f3006c674e567246215.safeframe.googlesyndication.com/safeframe/1-0-40/html/container.html" id="google_ads_iframe_/1024435/desktop_web_side_0" title="3rd party ad content" name="" scrolling="no" marginwidth="0" marginheight="0" width="300" height="600" data-is-safeframe="true" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" allow="attribution-reporting" role="region" aria-label="Advertisement" tabindex="0" data-google-container-id="b" data-load-complete="true" class="style-5ep2e">
+                    </iframe>
+                  </div>
+                </div>
+              </div>
+              <div class="lazy lazy-loaded" data-src="/matterindex/topicmattersummary?slug=66-50n-28-40e&amp;topicid=6438366">
+                <section id="topic-matter-info" class="highlighted-box">
+                  <h2 id="matters">
+                    sorunsallar
+                  </h2>
+                  <div id="topic-matters">
+                    <span>
+                      hiç soru sorulmamış...
+                    </span>
+                  </div>
+                  <div id="topic-matter-actions">
+                  </div>
+                </section>
+              </div>
+              <section id="hidden-channels" style="display:none">
+                müzik
+              </section>
+              <div id="sticky-anchor" class="style-4nQMx">
+              </div>
+
+              <div id="sticky-criteo" class="">
+              </div>
+              <div id="_adr_abp_container_3" data-section="1b389b46a410c8b26e901e5fc15a4a7d" data-packetid="00000001-f46e4606-6f2d-4e23-9daa-49f6d203dceb" class="_adr_abp_container style-PJkUR">
+               
+              </div>
+            </aside>
+          </div>
+
+          <div id="_adr_abp_container_4" data-section="af39f1b2b0583b6db99cc878ac453a12" data-packetid="00000001-f46e4606-6f2d-4e23-9daa-49f6d203dceb" class="_adr_abp_container style-Sky2d">
+           
+          </div>
+          <footer id="site-footer">
+            <ul>
+              <li>
+                <a href="/iletisim">
+                  iletişim
+                </a>
+              </li>
+              <li>
+                <a href="/entry/125231929">
+                  şeffaflık raporları
+                </a>
+              </li>
+              <li>
+                <a href="/sozluk-kurallari--207072">
+                  sözlük kuralları
+                </a>
+              </li>
+              <li>
+                <a href="/reklam">
+                  reklam
+                </a>
+              </li>
+              <li>
+                <a href="/sozluk-is-ilanlari--5895566">
+                  kariyer
+                </a>
+              </li>
+              <li>
+                <a href="/entry/19784395">
+                  kullanım koşulları
+                </a>
+              </li>
+              <li>
+                <a href="/entry/66470645">
+                  gizlilik politikamız
+                </a>
+              </li>
+              <li>
+                <a href="/entry/66762977" rel="help">
+                  sss
+                </a>
+              </li>
+              <li>
+                <a class="index-link" href="/istatistik">
+                  istatistikler
+                </a>
+              </li>
+              <li>
+                <a href="/sub-etha">
+                  sub-etha
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/sozluk" rel="noopener" target="_blank">
+                  instagram
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/sozluk" rel="noopener" target="_blank">
+                  twitter
+                </a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/eksisozluk" rel="noopener" target="_blank">
+                  facebook
+                </a>
+              </li>
+            </ul>
+          </footer>
+        </div>
+      </div>
+      
+    
+</body>
+</html>
